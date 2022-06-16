@@ -1,1 +1,1 @@
-Hello this is file 1 edited on master as well as on feature1
+Hello this is file 1 edited on master as well as on feature1. Now again editing it on master.
