@@ -1,0 +1,107 @@
+1. git init
+
+2. touch file1.txt
+   touch file2.txt
+   vim file1.txt
+
+3. git add file1.txt
+   git add file2.txt
+   git commit -m "added 2 files"
+
+4. touch file3.txt
+   touch .gitignore
+   vim .gitignore
+   	file3.txt
+   git rm file2.txt
+   git diff <commit hash>
+   git add .
+   git commit -m "deleted file2"
+
+5. vim file1.txt
+   git restore file1.txt
+
+6. vim file1.txt
+   git add file1.txt
+   git restore --staged file1.txt
+
+7. vim file1.txt
+   git add file1.txt
+   git commit -m "edited file1"
+   git reset --hard HEAD~1
+
+8. git status
+   git add file1.txt
+   git status
+   git commit -m "modifid file1"
+   git status
+
+9. git log
+
+10. git log <commit hash> -n1
+
+11. git branch feature1
+    git branch feature2
+    git branch -d feature2
+
+12. git switch feature1
+    vim file1.txt
+    git add file1.txt
+    git commit -m "modified file1 on feature1"
+
+13. git switch master
+    vim file1.txt
+    git add file1.txt
+    git commit -m "modified file1 on master"
+
+14. git merge feature1
+    vim file1.txt
+    git add file1.txt
+    git commit -m "merging master with feature1"
+
+15. git branch feature2
+
+15. git switch feature2
+    vim file1.txt
+    git add file1.txt
+    git commit -m "modified file1 on feature2"
+
+16. git switch master
+    vim file1.txt
+    git add file1.txt
+    git commit -m "modified file1 on master again"
+
+17. git checkout feature2
+    git rebase master
+    vim file1.txt
+    git add file1.txt
+    git commit -m "rebasing feature2 on master"
+    git rebase --continue
+
+18. in merge the history was shown as it happened while in rebase all commits on master came first while commits on feature2 came afterwards.
+
+19. git switch feature2
+    vim file1.txt
+    git stash
+
+    git switch main
+    vim file2.txt
+    git add file2.txt
+    git commit -m "changes in file2.txt"
+
+    git switch feature2
+    git stash apply
+
+20. git remote add origin <link>
+    git pull origin main
+    git push origin main
+
+    git checkout feature1
+    git push origin feature1
+
+    git checkout feature2
+    git push origin feature2
+
+
+
+ 
+
