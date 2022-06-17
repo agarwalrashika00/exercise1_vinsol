@@ -23,6 +23,7 @@
 6. vim file1.txt
    git add file1.txt
    git restore --staged file1.txt
+   git restore file1.txt
 
 7. vim file1.txt
    git add file1.txt
